@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Ryan Thorn</title>
+  </head>
+  <body>
+    <!-- Wireframe Version -->
+    <header>
+      <nav class="navigation" name="navigation" id="navigation">
+        <ul>
+          <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+          <li>
+            <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" name="hero" id="hero">
+        <h1>Hi! I'm Ryan Thorn</h1>
+        <h2>I'm a fullstack developer<br />in Portland, OR.</h2>
+        <h2>I like creating and collaborating.</h2>
+      </section>
+
+      <section class="about" name="about" id="about">
+        <h1>About Me</h1>
+        <p>
+          I'm brand new to tech, but I've been playing with computers my whole
+          life. As a kid, I still remember figuring out how to install Warcraft
+          with floppy disks and MS-DOS, and I try my best to bring that same joy
+          into my work. I'm a classical singer, a pretty good cook, a proud dog
+          dad, a lifelong Packers fan, and a problem solver.
+        </p>
+      </section>
+
+      <section class="projects" name="projects" id="projects">
+        <h1 class="h1__projects">My Projects</h1>
+        <section class="project" id="skew">
+          <h1>Skew My News!</h1>
+          <h2>
+            This web app queries the News API to search for top headlines within
+            a selected range of sources organized by ideological bias. Use the
+            slider to skew your news!
+          </h2>
+          <div class="screenshots">
+            <img src="/assets/skew/demo.gif" alt="" />
+          </div>
+          <div class="project__links">
+            <a href="https://ryandthorn.github.io/skew-my-news/">Live app</a>
+            <a href="https://github.com/ryandthorn/skew-my-news">GitHub</a>
+          </div>
+          <div class="tech-used"></div>
+        </section>
+
+        <section class="project" id="treblebase">
+          <h1>TrebleBase</h1>
+          <h2>
+            The idea behind TrebleBase is a medium for classical musicians to
+            easily connect with performance organizations.
+          </h2>
+          <div class="screenshots">
+            <img src="/assets/treblebase/demo.gif" alt="" />
+          </div>
+          <div class="project__links">
+            <a href="https://treblebase-client.herokuapp.com/">Live app</a>
+            <a href="https://github.com/ryandthorn/treblebase-client">GitHub</a>
+          </div>
+          <div class="tech-used"></div>
+        </section>
+
+        <section class="project" id="rpg">
+          <h1>Dendrion</h1>
+          <h2>
+            My first leap into making a game, inspired by the old-school browser
+            RPGs I grew up playing.
+          </h2>
+          <div class="screenshots">
+            <img src="/assets/rpg/demo.gif" alt="" />
+          </div>
+          <div class="project__links">
+            <a href="https://obscure-citadel-64452.herokuapp.com/">Live app</a>
+            <a href="https://github.com/ryandthorn/text-rpg">GitHub</a>
+          </div>
+          <div class="tech-used"></div>
+        </section>
+      </section>
+
+      <section class="contact" name="contact" id="contact">
+        <h1>Thanks for checking out my projects!</h1>
+        <form class="form__contact" id="form__contact">
+          <fieldset>
+            <legend>Get in touch:</legend>
+            <div class="wrap__contact-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                aria-required
+              />
+            </div>
+            <div class="wrap__contact-field">
+              <label for="message">Your message</label>
+              <textarea
+                name="message"
+                id="message"
+                maxlength="200"
+                placeholder="200 characters max"
+                cols="40"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              class="btn__send"
+              name="send"
+              id="send"
+              value="Send"
+            />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <a href="#hero">Back to the Top</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+/* Fonts */
+@import url(//fonts.googleapis.com/css?family=Sniglet|Overlock);
+
+:root {
+  --font-title: "Overlock", cursive;
+  --font-heading: "Sniglet", cursive;
+  --font-text: "Overlock", cursive;
+  --title-size: 36px;
+  --heading-size: 22px;
+  --text-size: 18px;
+}
+
+/* Global settings */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-text);
+  font-size: var(--text-size);
+  width: 100vw;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  text-align: center;
+}
+
+h1 {
+  font-size: var(--title-size);
+}
+
+h2 {
+  font-size: var(--heading-size);
+}
+
+p {
+  line-height: 1.3;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main section {
+  padding-top: 10vh;
+}
+
+/* Navigation */
+.navigation {
+  align-items: center;
+  background-color: black;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.navigation ul li {
+  padding: 0;
+}
+.navigation ul li a {
+  color: whitesmoke;
+  display: block;
+  padding: 1rem;
+}
+
+/* Hero */
+.hero {
+  padding: 10vh 0.5rem 2rem 0.5rem;
+}
+
+/* About */
+.about {
+  background-color: black;
+  color: white;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+/* Projects */
+.h1__projects {
+  margin: 0 0 3rem 0;
+}
+
+.project {
+  background-color: rgb(215, 242, 250);
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #ccc;
+  margin: 2rem 1rem;
+  padding: 1rem;
+}
+
+.project h2 {
+  font-family: var(--font-text);
+  font-weight: normal;
+}
+
+.screenshots {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.screenshots img {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 50vh;
+}
+
+.project__links {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.project__links a {
+  background-color: purple;
+  border: 3px solid purple;
+  border-radius: 20px;
+  color: white;
+  display: block;
+  font-family: var(--font-heading);
+  letter-spacing: 0.75px;
+  padding: 1rem;
+}
+
+.projects:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact Form */
+.contact {
+  margin: 0 0 3rem 0;
+}
+
+.contact h1 {
+  padding: 0 0.5rem;
+}
+
+.form__contact fieldset {
+  border: none;
+  padding: 1rem;
+}
+
+.form__contact legend {
+  font-family: var(--font-heading);
+  font-size: var(--heading-size);
+  text-align: center;
+}
+
+.wrap__contact-field {
+  line-height: 1.3;
+  margin: 0.5rem 0;
+}
+
+.form__contact input,
+.form__contact textarea {
+  border: 1px solid black;
+  box-shadow: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.form__contact input[type="submit"] {
+  background-color: purple;
+  border: 0;
+  color: white;
+  font-family: var(--font-heading);
+  font-size: var(--heading-size);
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
