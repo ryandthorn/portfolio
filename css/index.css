@@ -1,13 +1,13 @@
-/* Fonts */
-@import url(//fonts.googleapis.com/css?family=Sniglet|Overlock);
+@import url(//fonts.googleapis.com/css?family=Sniglet|Overlock|Righteous|Bangers|Roboto|Alegreya);
 
 :root {
-  --font-title: "Overlock", cursive;
+  --font-title: "Sniglet", cursive;
   --font-heading: "Sniglet", cursive;
   --font-text: "Overlock", cursive;
   --title-size: 36px;
   --heading-size: 22px;
   --text-size: 18px;
+  --max-width: 600px;
 }
 
 /* Global settings */
@@ -17,10 +17,14 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
 body {
   font-family: var(--font-text);
   font-size: var(--text-size);
-  width: 100vw;
 }
 
 h1,
@@ -56,6 +60,7 @@ main section {
   background-color: black;
   display: flex;
   height: 8vh;
+  max-width: var(--max-width);
   position: fixed;
   top: 0;
   width: 100%;
@@ -82,6 +87,11 @@ main section {
   padding: 10vh 0.5rem 2rem 0.5rem;
 }
 
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: var(--title-size);
+}
+
 /* About */
 .about {
   background-color: black;
@@ -89,7 +99,23 @@ main section {
   padding: 2rem 1rem 1rem 1rem;
 }
 
+.about h1 {
+  font-size: var(--title-size);
+}
+
 /* Projects */
+#skew h1 {
+  font-family: "Bangers", cursive;
+}
+
+#treblebase h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+#rpg h1 {
+  font-family: "Alegreya", serif;
+}
+
 .h1__projects {
   margin: 0 0 3rem 0;
 }
@@ -105,6 +131,7 @@ main section {
 .project h2 {
   font-family: var(--font-text);
   font-weight: normal;
+  padding: 0 1rem;
 }
 
 .screenshots {
