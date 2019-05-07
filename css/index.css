@@ -54,6 +54,7 @@ main section {
 .navigation {
   align-items: center;
   background-color: black;
+  display: flex;
   height: 8vh;
   position: fixed;
   top: 0;
