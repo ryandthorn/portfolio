@@ -8,6 +8,7 @@
   --heading-size: 22px;
   --text-size: 18px;
   --max-width: 600px;
+  --nav-height: 8vh;
 }
 
 /* Global settings */
@@ -50,8 +51,10 @@ a {
   text-decoration: none;
 }
 
-main section {
-  padding-top: 10vh;
+hr {
+  border: 1px solid black;
+  border-radius: 40%;
+  width: 10rem;
 }
 
 /* Navigation */
@@ -59,7 +62,7 @@ main section {
   align-items: center;
   background-color: black;
   display: flex;
-  height: 8vh;
+  height: var(--nav-height);
   max-width: var(--max-width);
   position: fixed;
   top: 0;
@@ -79,28 +82,42 @@ main section {
 .navigation ul li a {
   color: whitesmoke;
   display: block;
-  padding: 1rem;
 }
 
 /* Hero */
-.hero {
-  padding: 10vh 0.5rem 2rem 0.5rem;
+#hero {
+  margin: 0;
+  padding: calc(var(--nav-height) + 2vh) 0 3vh 0;
 }
 
 .hero h1 {
   font-family: var(--font-title);
   font-size: var(--title-size);
+  margin: 1rem 0 0 0;
+}
+
+.hero hr {
+  border-color: rgb(34, 134, 34);
 }
 
 /* About */
 .about {
   background-color: black;
   color: white;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: var(--nav-height) 1rem 1rem 1rem;
 }
 
 .about h1 {
   font-size: var(--title-size);
+  margin: 0;
+}
+
+.about hr {
+  border-color: yellow;
+}
+
+.about p {
+  margin: 2rem auto;
 }
 
 /* Projects */
@@ -117,21 +134,31 @@ main section {
 }
 
 .h1__projects {
-  margin: 0 0 3rem 0;
+  margin: 0;
+  padding: var(--nav-height) 0 0 0;
+}
+
+.projects hr {
+  border-color: purple;
 }
 
 .project {
-  background-color: rgb(215, 242, 250);
-  border-radius: 20px;
-  box-shadow: 3px 3px 3px #ccc;
-  margin: 2rem 1rem;
-  padding: 1rem;
+  margin: 1rem;
+  padding: 1rem 0;
+}
+
+.project h1 {
+  background-color: white;
+  box-shadow: 3px 3px 3px lightgrey;
+  border: 3px solid black;
+  margin: 0 auto;
+  max-width: fit-content;
+  padding: 1rem 1rem;
 }
 
 .project h2 {
   font-family: var(--font-text);
   font-weight: normal;
-  padding: 0 1rem;
 }
 
 .screenshots {
@@ -143,7 +170,7 @@ main section {
 .screenshots img {
   border: 1px solid #ccc;
   border-radius: 20px;
-  height: 70vh;
+  height: 60vh;
 }
 
 .project__links {
@@ -153,27 +180,45 @@ main section {
 }
 
 .project__links a {
-  background-color: purple;
   border: 3px solid purple;
   border-radius: 20px;
-  color: white;
   display: block;
   font-family: var(--font-heading);
   letter-spacing: 0.75px;
   padding: 1rem;
 }
+.project__links a:hover {
+  background-color: purple;
+  color: white;
+}
 
 .projects:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.heroku_note {
+  text-align: center;
 }
 
 /* Contact Form */
 .contact {
-  margin: 0 0 3rem 0;
+  background-color: black;
+  color: white;
+  margin: 0;
 }
 
 .contact h1 {
-  padding: 0 0.5rem;
+  margin: 0;
+  padding: 8vh 0.25rem 0 0.25rem;
+}
+
+.contact hr {
+  border-color: orangered;
+}
+
+.form__contact {
+  margin-top: 2rem;
 }
 
 .form__contact fieldset {
