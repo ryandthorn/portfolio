@@ -1,14 +1,63 @@
-@import url(//fonts.googleapis.com/css?family=Sniglet|Overlock|Righteous|Bangers|Roboto|Alegreya);
+@font-face {
+  font-family: "Sniglet";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/assets/fonts/Sniglet/Sniglet-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bangers";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/assets/fonts/Bangers/Bangers-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alegreya";
+  font-weight: 400;
+  font-style: normal;
+  src: url(/assets/fonts/Alegreya/Alegreya-Regular.ttf) format("truetype");
+  font-display: swap;
+}
 
 :root {
-  --font-title: "Sniglet", cursive;
-  --font-heading: "Sniglet", cursive;
-  --font-text: "Overlock", cursive;
+  --font-title: "Sniglet", sans-serif;
+  --font-heading: "Sniglet", sans-serif;
+  --font-text: sans-serif;
   --title-size: 36px;
   --heading-size: 22px;
   --text-size: 18px;
   --max-width: 600px;
   --nav-height: 8vh;
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --nav-height: 50px;
+    --title-size: 42px;
+    --heading-size: 27px;
+    --text-size: 20px;
+  }
+
+  .screenshots img {
+    max-height: 500px;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  #contact {
+    padding-bottom: 50px;
+  }
 }
 
 /* Global settings */
@@ -135,15 +184,17 @@ hr {
 
 .h1__projects {
   margin: 0;
-  padding: var(--nav-height) 0 0 0;
+  padding: calc(var(--nav-height) + 1rem) 0 0 0;
 }
 
 .projects hr {
   border-color: purple;
+  margin: 1rem auto;
 }
 
 .project {
-  margin: 1rem;
+  /* background-color: rgb(241, 241, 241); */
+  margin: 1rem 0;
   padding: 1rem 0;
 }
 
@@ -151,14 +202,16 @@ hr {
   background-color: white;
   box-shadow: 3px 3px 3px lightgrey;
   border: 3px solid black;
-  margin: 0 auto;
+  font-size: var(--title-size);
+  margin: 1rem auto;
   max-width: fit-content;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
 }
 
-.project h2 {
-  font-family: var(--font-text);
-  font-weight: normal;
+.project-description {
+  line-height: 1.4;
+  padding: 1rem;
+  text-align: center;
 }
 
 .screenshots {
@@ -167,7 +220,7 @@ hr {
   margin: 2rem 0;
 }
 
-.screenshots img {
+.screenshots video {
   border: 1px solid #ccc;
   border-radius: 20px;
   height: 60vh;
@@ -180,16 +233,20 @@ hr {
 }
 
 .project__links a {
-  border: 3px solid purple;
+  border: 5px solid purple;
   border-radius: 20px;
+  background-color: purple;
+  color: white;
   display: block;
   font-family: var(--font-heading);
   letter-spacing: 0.75px;
   padding: 1rem;
+  text-align: center;
+  width: 130px;
 }
 .project__links a:hover {
-  background-color: purple;
-  color: white;
+  background-color: white;
+  color: purple;
 }
 
 .projects:last-child {
@@ -210,7 +267,7 @@ hr {
 
 .contact h1 {
   margin: 0;
-  padding: 8vh 0.25rem 0 0.25rem;
+  padding: var(--nav-height) 0.25rem 0 0.25rem;
 }
 
 .contact hr {
@@ -232,26 +289,15 @@ hr {
   text-align: center;
 }
 
-.wrap__contact-field {
-  line-height: 1.3;
-  margin: 0.5rem 0;
-}
-
-.form__contact input,
-.form__contact textarea {
-  border: 1px solid black;
-  box-shadow: none;
-  padding: 0.5rem;
-  width: 100%;
-}
-
 .form__contact input[type="submit"] {
-  background-color: purple;
-  border: 0;
+  background-color: orangered;
+  border: 2px solid orangered;
   color: white;
+  cursor: pointer;
   font-family: var(--font-heading);
   font-size: var(--heading-size);
   padding: 1rem;
+  width: 100%;
 }
 
 /* Footer */

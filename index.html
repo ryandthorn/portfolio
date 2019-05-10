@@ -9,7 +9,6 @@
     <title>Ryan Thorn</title>
   </head>
   <body>
-    <!-- Wireframe Version -->
     <header>
       <nav class="navigation" name="navigation" id="navigation">
         <ul id="nav-menu">
@@ -27,7 +26,7 @@
       <section class="hero" name="hero" id="hero">
         <h1>Hi! I'm Ryan Thorn</h1>
         <hr />
-        <h2>I'm a fullstack developer<br />in Portland, OR.</h2>
+        <h2>I'm a fullstack web developer<br />in Portland, OR.</h2>
         <h2>I like creating and collaborating.</h2>
       </section>
 
@@ -35,11 +34,13 @@
         <h1>About Me</h1>
         <hr />
         <p>
-          I'm brand new to tech, but I've been playing with computers my whole
-          life. As a kid, I still remember gleefully figuring out how to install
-          Warcraft with floppy disks and MS-DOS, and I try my best to bring that
-          same joy into my work. When I'm not coding, I'm a classical singer, a
-          pretty good cook, a proud dog dad, and a lifelong Packers fan.
+          I'm brand new to tech, but I've been playing and tinkering with
+          computers my whole life. I try my best to bring that same joy into my
+          work.
+        </p>
+        <p>
+          When I'm not coding, I'm a classical singer, a pretty good cook, a
+          proud dog dad, and a lifelong Packers fan.
         </p>
       </section>
 
@@ -48,16 +49,19 @@
         <hr />
         <section class="project" id="skew">
           <h1>Skew My News!</h1>
-          <h2>
+          <p class="project-description">
             This web app queries the
             <a href="https://newsapi.org/">News API</a> to search for top
             headlines organized by ideological bias according to
             <a href="https://www.allsides.com/media-bias/media-bias-ratings"
               >AllSides Media Bias Ratings</a
             >. Use the slider to skew your news!
-          </h2>
+          </p>
           <div class="screenshots">
-            <img src="./assets/skew/demo.gif" alt="" />
+            <video autoplay loop muted playsinline>
+              <source src="assets/skew/demo.webm" type="video/webm" />
+              <source src="assets/skew/demo.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="project__links">
             <a href="https://ryandthorn.github.io/skew-my-news/">Live app</a>
@@ -65,15 +69,18 @@
           </div>
           <div class="tech-used"></div>
         </section>
-
+        <hr />
         <section class="project" id="treblebase">
           <h1>TrebleBase</h1>
-          <h2>
+          <p class="project-description">
             TrebleBase is an idea for an app for classical musicians to easily
             connect with performance organizations.
-          </h2>
+          </p>
           <div class="screenshots">
-            <img src="./assets/treblebase/demo.gif" alt="" />
+            <video autoplay loop muted playsinline>
+              <source src="assets/treblebase/demo.webm" type="video/webm" />
+              <source src="assets/treblebase/demo.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="project__links">
             <a href="https://treblebase-client.herokuapp.com/">Live app</a>
@@ -86,15 +93,18 @@
           </p>
           <div class="tech-used"></div>
         </section>
-
+        <hr />
         <section class="project" id="rpg">
           <h1>Dendrion</h1>
-          <h2>
+          <p class="project-description">
             My first leap into making a game, inspired by the old-school browser
             RPGs I grew up playing.
-          </h2>
+          </p>
           <div class="screenshots">
-            <img src="./assets/rpg/demo.gif" alt="" />
+            <video autoplay loop muted playsinline>
+              <source src="assets/rpg/demo.webm" type="video/webm" />
+              <source src="assets/rpg/demo.mp4" type="video/mp4" />
+            </video>
           </div>
           <div class="project__links">
             <a href="https://obscure-citadel-64452.herokuapp.com/">Live app</a>
@@ -112,37 +122,19 @@
       <section class="contact" name="contact" id="contact">
         <h1>Thanks for stopping by!</h1>
         <hr />
-        <form class="form__contact" id="form__contact">
+        <form
+          class="form__contact"
+          id="form__contact"
+          action="mailto:ryandthorn@gmail.com"
+        >
           <fieldset>
-            <legend>Get in touch:</legend>
-            <div class="wrap__contact-field">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                aria-required
-              />
-            </div>
-            <div class="wrap__contact-field">
-              <label for="message">Your message</label>
-              <textarea
-                name="message"
-                id="message"
-                maxlength="200"
-                placeholder="200 characters max"
-                cols="40"
-                rows="5"
-                required
-              ></textarea>
-            </div>
+            <legend>Leave a note:</legend>
             <input
               type="submit"
               class="btn__send"
               name="send"
               id="send"
-              value="Send"
+              value="Email me"
             />
           </fieldset>
         </form>
