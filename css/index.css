@@ -228,7 +228,7 @@ hr {
 
 .project__links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 1rem;
 }
 
@@ -240,6 +240,7 @@ hr {
   display: block;
   font-family: var(--font-heading);
   letter-spacing: 0.75px;
+  margin: 0 0.75rem;
   padding: 1rem;
   text-align: center;
   width: 130px;
@@ -255,7 +256,20 @@ hr {
 }
 
 .heroku_note {
+  margin: 2rem 0;
   text-align: center;
+}
+
+.tech-used {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tech-used img {
+  display: inline-block;
+  margin: 0 0.5rem;
 }
 
 /* Contact Form */
