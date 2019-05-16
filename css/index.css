@@ -148,11 +148,11 @@ header {
   width: 40px;
 }
 #previous {
-  background: url(/assets/icons/arrow-left.svg);
+  background: url(../assets/icons/arrow-left.svg);
   background-repeat: no-repeat;
 }
 #next {
-  background: url(/assets/icons/arrow-right.svg);
+  background: url(../assets/icons/arrow-right.svg);
   background-repeat: no-repeat;
 }
 .project {
