@@ -53,7 +53,9 @@ $("#navigate-projects").click(function(e) {
     const currentProject = $(".current");
     const previousProject = currentProject.prev();
     if (previousProject.length === 0) {
-      return;
+      const lastChild = $("#view-projects section").last();
+      currentProject.toggleClass("hidden current");
+      lastChild.toggleClass("hidden current");
     } else {
       currentProject.toggleClass("hidden current");
       previousProject.toggleClass("hidden current");
@@ -62,7 +64,9 @@ $("#navigate-projects").click(function(e) {
     const currentProject = $(".current");
     const nextProject = currentProject.next();
     if (nextProject.length === 0) {
-      return;
+      const firstChild = $("#view-projects section").first();
+      currentProject.toggleClass("hidden current");
+      firstChild.toggleClass("hidden current");
     } else {
       currentProject.toggleClass("hidden current");
       nextProject.toggleClass("hidden current");
