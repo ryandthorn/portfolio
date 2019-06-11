@@ -280,25 +280,6 @@ header {
     height: calc(fit-content - #{$nav-height__tablet});
   }
 }
-/* Tablet - Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  // body {
-  //   font-size: $text-size__tablet;
-  // }
-  // h1 {
-  //   font-size: $title-size__tablet;
-  // }
-  // h2 {
-  //   font-size: $heading-size__tablet;
-  // }
-  // #nav-menu {
-  //   font-size: $nav-text-size__tablet;
-  //   height: $nav-height__tablet;
-  // }
-  // main {
-  //   height: calc(fit-content - #{$nav-height__tablet});
-  // }
-}
 /* Desktop */
 @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
   body {
