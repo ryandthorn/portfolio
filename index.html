@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Forum"
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Ryan Thorn</title>
   </head>
   <body>
     <header id="header">
-      <nav class="navigation" name="navigation" id="navigation">
+      <nav
+        class="navigation animated bounceInDown"
+        name="navigation"
+        id="navigation"
+      >
         <ul id="nav-menu">
-          <li>
+          <li id="wrap-home">
             <p
               id="nav-home"
               class="nav-link nav-active"
@@ -26,12 +31,12 @@
               Home
             </p>
           </li>
-          <li>
+          <li id="wrap-about">
             <p id="nav-about" class="nav-link" role="button" tabindex="0">
               About
             </p>
           </li>
-          <li>
+          <li id="wrap-projects">
             <p id="nav-projects" class="nav-link" role="button" tabindex="0">
               Projects
             </p>
@@ -42,19 +47,45 @@
     <main>
       <section class="home area" name="home" id="home">
         <div class="business-card">
-          <h1>Ryan Thorn</h1>
-          <h2>Fullstack Web Developer</h2>
-          <h2>Creative Problem-Solver</h2>
-          <div class="contact-row">
-            <img
-              src="assets/icons/mail.svg"
-              alt="Email"
-              height="30px"
-              width="30px"
-            />
-            <p class="text-email">
-              <a href="mailto:ryandthorn@gmail.com">ryandthorn@gmail.com</a>
-            </p>
+          <h1 class="animated fadeIn" id="name">Ryan Thorn</h1>
+          <h2 class="animated slideInLeft" id="title1">
+            Fullstack Web Developer
+          </h2>
+          <hr class="animated fadeIn" id="hr__title" />
+          <h2 class="animated slideInRight" id="title2">
+            Creative Problem-Solver
+          </h2>
+          <div class="wrap__contacts" id="wrap__contacts">
+            <button id="email" class="btn__contact animated fadeIn">
+              <img
+                class="img__contact"
+                src="assets/icons/mail.svg"
+                alt="Email"
+                height="30px"
+                width="30px"
+              />
+              <p>Email</p>
+            </button>
+            <button id="github" class="btn__contact animated fadeIn">
+              <img
+                class="img__contact"
+                src="assets/icons/github.svg"
+                alt="GitHub"
+                height="30px"
+                width="30px"
+              />
+              <p>GitHub</p>
+            </button>
+            <button id="linkedin" class="btn__contact animated fadeIn">
+              <img
+                class="img__contact"
+                src="assets/icons/linkedin.svg"
+                alt="LinkedIn"
+                height="30px"
+                width="30px"
+              />
+              <p>LinkedIn</p>
+            </button>
           </div>
         </div>
       </section>
@@ -63,9 +94,9 @@
         <img class="headshot" src="assets/pictures/headshot.jpg" alt="" />
         <div class="bio">
           <p>
-            I'm brand new to tech, but I've been playing and tinkering with
-            computers my whole life. I try my best to bring that same joy into
-            my work.
+            I'm new to tech, but I've been tinkering with computers my whole
+            life. I try to bring open-mindedness, attention to detail, and a joy
+            of learning into my work.
           </p>
           <p>
             When I'm not coding, I'm a classical singer, a pretty good cook, a
@@ -101,31 +132,34 @@
               <a href="https://ryandthorn.github.io/skew-my-news/">Live app</a>
               <a href="https://github.com/ryandthorn/skew-my-news">GitHub</a>
             </div>
-            <div class="tech-used">
-              <img
-                src="assets/icons/html5.svg"
-                alt="HTML5"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/css3.svg"
-                alt="CSS3"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/js.svg"
-                alt="JavaScript"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/jquery.svg"
-                alt="jQuery"
-                height="50px"
-                width="50px"
-              />
+            <div class="tech-wrap">
+              <h2>Tech used:</h2>
+              <div class="tech-used">
+                <img
+                  src="assets/icons/html5.svg"
+                  alt="HTML5"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/css3.svg"
+                  alt="CSS3"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/js.svg"
+                  alt="JavaScript"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/jquery.svg"
+                  alt="jQuery"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
             </div>
           </section>
           <section class="project hidden" id="project2">
@@ -151,55 +185,58 @@
               <a href="https://www.heroku.com/">Heroku</a> and may need to be
               woken up. It might take a few seconds to load.
             </p>
-            <div class="tech-used">
-              <img
-                src="assets/icons/react.svg"
-                alt="React"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/redux.svg"
-                alt="React Redux"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/nodejs.svg"
-                alt="NodeJS"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/express.svg"
-                alt="Express"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/mongodb.svg"
-                alt="MongoDB"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/html5.svg"
-                alt="HTML5"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/css3.svg"
-                alt="CSS3"
-                height="50px"
-                width="50px"
-              />
-              <img
-                src="assets/icons/js.svg"
-                alt="JavaScript"
-                height="50px"
-                width="50px"
-              />
+            <div class="tech-wrap">
+              <h2>Tech used:</h2>
+              <div class="tech-used">
+                <img
+                  src="assets/icons/react.svg"
+                  alt="React"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/redux.svg"
+                  alt="React Redux"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/nodejs.svg"
+                  alt="NodeJS"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/express.svg"
+                  alt="Express"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/mongodb.svg"
+                  alt="MongoDB"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/html5.svg"
+                  alt="HTML5"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/css3.svg"
+                  alt="CSS3"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/js.svg"
+                  alt="JavaScript"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
             </div>
           </section>
           <section class="project hidden" id="project3">

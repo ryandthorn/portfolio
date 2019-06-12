@@ -1,7 +1,7 @@
 :root {
-  --font-title: sans-serif;
-  --font-heading: "Forum", sans-serif;
-  --font-text: sans-serif;
+  --font-title: "Roboto", sans-serif;
+  --font-heading: "Open Sans", sans-serif;
+  --font-text: "Open Sans", sans-serif;
   --hero-size: 40px;
   --title-size: 38px;
   --heading-size: 22px;
@@ -9,11 +9,12 @@
   --text-size: 18px;
   --nav-height: 4rem;
   --main-height: calc(100vh - var(--nav-height));
-  --bg-color-1: rgb(64, 67, 255);
-  --bg-color-2: rgb(57, 125, 252);
-  --font-color: rgb(235, 235, 235);
+  --bg-color-1: rgb(101, 104, 248);
+  --bg-color-2: rgb(83, 141, 248);
+  --font-color: white;
   --accent-color: orangered;
   --link-color: rgb(251, 255, 0);
+  --button-color: orangered;
 }
 /* Global settings */
 *,
@@ -50,7 +51,6 @@ p {
 a {
   color: var(--link-color);
   cursor: pointer;
-  font-weight: bold;
   text-decoration: none;
 }
 hr {
@@ -64,6 +64,14 @@ hr {
 /* Navigation */
 header {
   width: 100%;
+}
+.navigation {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
 }
 #nav-menu {
   display: flex;
@@ -84,8 +92,7 @@ header {
 .nav-link {
   cursor: pointer;
   font-family: var(--font-heading);
-  font-weight: bold;
-  height: fit-content;
+  height: max-content;
   padding-bottom: 0.25rem;
   text-align: center;
 }
@@ -94,32 +101,99 @@ header {
 }
 /* Home */
 .home {
-  align-items: center;
-  display: flex;
   height: var(--main-height);
-  justify-content: center;
 }
 .home a {
   color: var(--font-color);
 }
 .business-card {
-  margin-bottom: var(--nav-height);
-}
-.contact-row {
-  align-items: center;
-  bottom: 1rem;
   display: flex;
+  flex-direction: column;
+}
+.business-card h1 {
+  font-weight: bold;
+  margin: 2rem 0 2.5rem 0;
+}
+.business-card h2 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+#title1 {
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+#title2 {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.business-card hr {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  border-color: var(--font-color);
+  margin: 1rem auto;
+  width: 10rem;
+}
+.wrap__contacts {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  left: 0;
-  position: fixed;
+  margin-top: 3rem;
   width: 100%;
 }
-.contact-row img {
-  margin: 0.5rem;
+.btn__contact {
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0.75rem 0;
+  padding: 0.25em 0.5em;
+  min-width: max-content;
+}
+.btn__contact:hover {
+  border-color: var(--accent-color);
+  cursor: pointer;
+}
+.btn__contact > * {
+  pointer-events: none;
+}
+.btn__contact img {
+  align-self: center;
+  justify-self: center;
+  margin: 0.25em;
+}
+.btn__contact p {
+  align-self: center;
+  margin: 0 0 0 0.25em;
+}
+#email {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#github {
+  -webkit-animation-delay: 2.25s;
+  -moz-animation-delay: 2.25s;
+  animation-delay: 2.25s;
+}
+#linkedin {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 /* About */
 .about {
-  height: var(--main-height);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
 .about h2 {
   font-family: var(--font-text);
@@ -129,8 +203,8 @@ header {
   border-radius: 50%;
   display: block;
   margin: 1rem auto;
-  max-height: 45vh;
-  max-width: 45vw;
+  max-height: 200px;
+  max-width: 200px;
 }
 .bio {
   margin: 1rem;
@@ -158,6 +232,9 @@ header {
 .project {
   text-align: center;
 }
+.project-description {
+  margin: 1rem 2rem;
+}
 .screenshots {
   display: flex;
   justify-content: center;
@@ -174,17 +251,17 @@ header {
   justify-content: center;
 }
 .project__links a {
-  background-color: var(--link-color);
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 3px 3px lightblue;
   color: black;
-  border: 3px solid var(--link-color);
+  border: 3px solid lightgray;
   margin: 0 0.75rem;
   padding: 1rem;
   width: 150px;
 }
 .project__links a:hover {
-  background-color: var(--link-color);
+  background-color: white;
+  border: 3px solid var(--accent-color);
   color: black;
 }
 .heroku_note {
@@ -196,7 +273,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 1.5rem 0;
+  margin: 1.5rem;
 }
 .tech-used img {
   display: inline-block;
@@ -205,13 +282,23 @@ header {
 /* General - Landscape */
 @media only screen and (orientation: landscape) {
   .about {
-    align-items: center;
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
+    flex-direction: row;
+    max-width: 800px;
+    font-size: 22px;
   }
   .headshot {
     margin: 1rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .about {
+    flex-direction: row;
+  }
+  .headshot {
+    flex-basis: 30rem;
+  }
+  .bio {
+    flex-basis: 2;
   }
 }
 /* Mobile - Landscape */
@@ -237,14 +324,6 @@ header {
   #nav-menu li {
     width: 150px;
   }
-  #about {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 1rem;
-  }
   .headshot {
     height: 300px;
     margin: 1rem;
@@ -255,10 +334,6 @@ header {
   main {
     height: calc(fit-content - var(--nav-height));
   }
-  #about {
-    height: calc(100vh - var(--nav-height));
-    padding-bottom: 10rem;
-  }
 }
 /* Desktop */
 @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
@@ -267,7 +342,7 @@ header {
     --title-size: 56px;
     --heading-size: 32px;
     --nav-text-size: 30px;
-    --text-size: 28px;
+    --text-size: 24px;
     --nav-height: 6rem;
   }
   body {
@@ -277,12 +352,14 @@ header {
   #nav-menu li {
     width: 150px;
   }
-  .contact-row {
-    position: static;
+  .wrap__contacts {
+    flex-direction: row;
   }
-  #about {
-    height: calc(100vh - var(--nav-height));
-    padding-bottom: 10rem;
+  .btn__contact {
+    margin: 1rem;
+  }
+  .btn__contact p {
+    font-size: 22px;
   }
   .headshot {
     height: 300px;

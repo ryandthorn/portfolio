@@ -1,10 +1,34 @@
 "use strict";
-
+/*** Contact buttons ***/
+$("#wrap__contacts").on("click", function(e) {
+  e.preventDefault();
+  switch (e.target.id) {
+    case "email":
+      const email = "ryandthorn@gmail.com";
+      const subject = "Portfolio";
+      document.location = `mailto:${email}?subject=${subject}`;
+      break;
+    case "github":
+      const githubURL = "https://github.com/ryandthorn";
+      window.open(githubURL, "_blank");
+      break;
+    case "linkedin":
+      const linkedinURL = "https://www.linkedin.com/in/ryandthorn/";
+      window.open(linkedinURL, "_blank");
+      break;
+  }
+});
 /*** Navigation bar ***/
 $("#navigation").on("click", function(e) {
   e.preventDefault();
   switch (e.target.id) {
     case "nav-home":
+      if ($("#home").hasClass("hidden")) {
+        highlightNav("home");
+        displayArea("home");
+      }
+      break;
+    case "wrap-home":
       if ($("#home").hasClass("hidden")) {
         highlightNav("home");
         displayArea("home");
@@ -16,16 +40,22 @@ $("#navigation").on("click", function(e) {
         displayArea("about");
       }
       break;
+    case "wrap-about":
+      if ($("#about").hasClass("hidden")) {
+        highlightNav("about");
+        displayArea("about");
+      }
+      break;
     case "nav-projects":
       if ($("#projects").hasClass("hidden")) {
         highlightNav("projects");
         displayArea("projects");
       }
       break;
-    case "nav-contact":
-      if ($("#contact").hasClass("hidden")) {
-        highlightNav("contact");
-        displayArea("contact");
+    case "wrap-projects":
+      if ($("#projects").hasClass("hidden")) {
+        highlightNav("projects");
+        displayArea("projects");
       }
       break;
   }
@@ -45,7 +75,6 @@ const highlightNav = area => {
   $(".nav-link").removeClass("nav-active");
   $(`#nav-${area}`).addClass("nav-active");
 };
-
 /*** Project navigation ***/
 $("#navigate-projects").click(function(e) {
   e.preventDefault();
@@ -71,5 +100,53 @@ $("#navigate-projects").click(function(e) {
       currentProject.toggleClass("hidden current");
       nextProject.toggleClass("hidden current");
     }
+  }
+});
+/*** Animation ***/
+$(function() {
+  function endAnimation(_node) {
+    function handleAnimationEnd() {
+      node.classList.remove("animated", _node.animation);
+      node.removeEventListener("animationend", handleAnimationEnd);
+    }
+    const node = document.querySelector(_node.element);
+    node.addEventListener("animationend", handleAnimationEnd);
+  }
+  const animatedElements = [
+    {
+      element: "#navigation",
+      animation: "bounceInDown"
+    },
+    {
+      element: "#name",
+      animation: "fadeIn"
+    },
+    {
+      element: "#hr__title",
+      animation: "fadeIn"
+    },
+    {
+      element: "#title1",
+      animation: "slideInLeft"
+    },
+    {
+      element: "#title2",
+      animation: "slideInRight"
+    },
+    {
+      element: "#email",
+      animation: "fadeIn"
+    },
+    {
+      element: "#github",
+      animation: "fadeIn"
+    },
+    {
+      element: "#linkedin",
+      animation: "fadeIn"
+    }
+  ];
+  for (let node of animatedElements) {
+    endAnimation(node);
   }
 });
