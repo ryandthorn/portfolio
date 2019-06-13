@@ -146,13 +146,14 @@ header {
   width: 100%;
 }
 .btn__contact {
+  align-items: center;
   border: 2px solid lightgray;
   border-radius: 25px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-wrap: none;
   margin: 0.75rem 0;
   padding: 0.25em 0.5em;
-  min-width: max-content;
+  width: 175px;
 }
 .btn__contact:hover {
   border-color: var(--accent-color);
@@ -162,13 +163,12 @@ header {
   pointer-events: none;
 }
 .btn__contact img {
-  align-self: center;
-  justify-self: center;
   margin: 0.25em;
 }
 .btn__contact p {
-  align-self: center;
   margin: 0 0 0 0.25em;
+  text-align: center;
+  width: 100%;
 }
 #email {
   -webkit-animation-delay: 2s;
