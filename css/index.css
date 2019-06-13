@@ -152,7 +152,7 @@ header {
   grid-template-columns: 1fr 2fr;
   margin: 0.75rem 0;
   padding: 0.25em 0.5em;
-  min-width: max-content;
+  width: 175px;
 }
 .btn__contact:hover {
   border-color: var(--accent-color);
