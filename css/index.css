@@ -65,14 +65,6 @@ hr {
 header {
   width: 100%;
 }
-.navigation {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  animation-duration: 2s;
-}
 #nav-menu {
   display: flex;
   font-size: var(--nav-text-size);
@@ -119,20 +111,7 @@ header {
   margin: 0;
   padding: 0;
 }
-#title1 {
-  -webkit-animation-delay: 0.75s;
-  -moz-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-}
-#title2 {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}
 .business-card hr {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s;
   border-color: var(--font-color);
   margin: 1rem auto;
   width: 10rem;
@@ -169,21 +148,6 @@ header {
 .btn__contact p {
   align-self: center;
   margin: 0 0 0 0.25em;
-}
-#email {
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  animation-delay: 2s;
-}
-#github {
-  -webkit-animation-delay: 2.25s;
-  -moz-animation-delay: 2.25s;
-  animation-delay: 2.25s;
-}
-#linkedin {
-  -webkit-animation-delay: 2.5s;
-  -moz-animation-delay: 2.5s;
-  animation-delay: 2.5s;
 }
 /* About */
 .about {
