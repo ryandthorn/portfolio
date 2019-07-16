@@ -1,5 +1,5 @@
 "use strict";
-/*** Contact buttons ***/
+/** * Contact buttons ***/
 $("#wrap__contacts").on("click", function(e) {
   e.preventDefault();
   switch (e.target.id) {
@@ -18,7 +18,7 @@ $("#wrap__contacts").on("click", function(e) {
       break;
   }
 });
-/*** Navigation bar ***/
+/** * Navigation bar ***/
 $("#navigation").on("click", function(e) {
   e.preventDefault();
   switch (e.target.id) {
@@ -62,7 +62,7 @@ $("#navigation").on("click", function(e) {
 });
 // Navigation bar - keyboard
 $("#navigation").keypress(function(e) {
-  if (e.which == 13) {
+  if (e.which === 13) {
     $(`#${e.target.id}`).click();
   }
 });
@@ -75,7 +75,7 @@ const highlightNav = area => {
   $(".nav-link").removeClass("nav-active");
   $(`#nav-${area}`).addClass("nav-active");
 };
-/*** Project navigation ***/
+/** * Project navigation ***/
 $("#navigate-projects").click(function(e) {
   e.preventDefault();
   if (e.target.id === "previous") {

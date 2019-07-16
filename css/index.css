@@ -11,10 +11,10 @@
   --main-height: calc(100vh - var(--nav-height));
   --bg-color-1: rgb(101, 104, 248);
   --bg-color-2: rgb(83, 141, 248);
-  --font-color: white;
-  --accent-color: orangered;
+  --font-color: rgb(255, 255, 255);
+  --accent-color: rgb(255, 69, 0);
   --link-color: rgb(251, 255, 0);
-  --button-color: orangered;
+  --button-color: rgb(255, 69, 0);
 }
 /* Global settings */
 *,
@@ -125,13 +125,15 @@ header {
   width: 100%;
 }
 .btn__contact {
-  border: 2px solid lightgray;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(211, 211, 211);
   border-radius: 25px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-wrap: nowrap; 
   margin: 0.75rem 0;
   padding: 0.25em 0.5em;
-  min-width: max-content;
+  width: 175px;
 }
 .btn__contact:hover {
   border-color: var(--accent-color);
@@ -141,13 +143,12 @@ header {
   pointer-events: none;
 }
 .btn__contact img {
-  align-self: center;
-  justify-self: center;
   margin: 0.25em;
 }
 .btn__contact p {
-  align-self: center;
   margin: 0 0 0 0.25em;
+  text-align: center;
+  width: 100%;
 }
 /* About */
 .about {
@@ -163,7 +164,7 @@ header {
   font-family: var(--font-text);
 }
 .headshot {
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
   display: block;
   margin: 1rem auto;
@@ -205,7 +206,7 @@ header {
   margin: 2rem 0;
 }
 .screenshots video {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 20px;
   height: 60vh;
 }
@@ -215,18 +216,18 @@ header {
   justify-content: center;
 }
 .project__links a {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  color: black;
-  border: 3px solid lightgray;
+  color: rgb(0, 0, 0);
+  border: 3px solid rgb(211, 211, 211);
   margin: 0 0.75rem;
   padding: 1rem;
   width: 150px;
 }
 .project__links a:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 3px solid var(--accent-color);
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .heroku_note {
   margin: 1rem 0;
