@@ -1,0 +1,32 @@
+.main {
+  margin-top: $nav-height;
+}
+.landing {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "pic" "greeting" "tagline";
+  .img-wrap {
+    grid-area: pic;
+    @include flex_centered;
+    img {
+      border-radius: 50%;
+      box-shadow: 1px 1px 1px grey;
+      display: block;
+      height: 200px;
+      width: 200px;
+      margin: 2rem 1rem 1rem 1rem;
+    }
+  }
+  h1 {
+    grid-area: greeting;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  h2 {
+    grid-area: tagline;
+    margin: 0 1rem;
+    padding: 20px 0;
+    text-align: center;
+  }
+}

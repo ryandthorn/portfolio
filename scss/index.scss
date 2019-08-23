@@ -2,7 +2,8 @@
 
 @import "base/normalize";
 @import "base/variables";
+@import "base/mixins";
 
 // Components
-
-@import "components/previous-styles";
+@import "components/header";
+@import "components/main";

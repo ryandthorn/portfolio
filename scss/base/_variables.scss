@@ -1,31 +1,6 @@
-$font-title: "Roboto", sans-serif;
-$font-heading: "Open Sans", sans-serif;
-$font-text: "Open Sans", sans-serif;
-$title-size: 38px;
-$heading-size: 22px;
-$nav-text-size: 20px;
-$text-size: 18px;
-$nav-height: 4rem;
-$main-height: calc(100vh - #{$nav-height});
-$bg-color-1: rgb(101, 104, 248);
-$bg-color-2: rgb(83, 141, 248);
-$font-color: rgb(255, 255, 255);
-$accent-color: rgb(255, 69, 0);
-$link-color: rgb(251, 255, 0);
-$button-color: rgb(255, 69, 0);
-
-// Tablet
-
-$title-size__tablet: 56px;
-$heading-size__tablet: 32px;
-$nav-text-size__tablet: 30px;
-$text-size__tablet: 22px;
-$nav-height__tablet: 6rem;
-
-// Desktop
-
-$title-size__desktop: 56px;
-$heading-size__desktop: 32px;
-$nav-text-size__desktop: 30px;
-$text-size__desktop: 24px;
-$nav-height__desktop: 6rem;
+$content-width: 1000px;
+$breakpoint: 799px;
+$nav-height: 70px;
+$nav-background: black;
+$nav-font-color: #ffffff;
+$link-hover-color: #2581dc;

@@ -1,0 +1,20 @@
+@mixin zero_margin-padding {
+  margin: 0;
+  padding: 0;
+}
+@mixin reset_list {
+  list-style: none;
+  @include zero_margin-padding;
+}
+@mixin flex_centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

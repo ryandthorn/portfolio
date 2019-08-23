@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="_previous-index.css" />
+    <title>Previous Index</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav
+        class="navigation animated bounceInDown"
+        name="navigation"
+        id="navigation"
+      >
+        <ul id="nav-menu">
+          <li id="wrap-home">
+            <p
+              id="nav-home"
+              class="nav-link nav-active"
+              role="button"
+              tabindex="0"
+            >
+              Home
+            </p>
+          </li>
+          <li id="wrap-about">
+            <p id="nav-about" class="nav-link" role="button" tabindex="0">
+              About
+            </p>
+          </li>
+          <li id="wrap-projects">
+            <p id="nav-projects" class="nav-link" role="button" tabindex="0">
+              Projects
+            </p>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home area" name="home" id="home">
+        <div class="business-card">
+          <h1 id="name">Ryan Thorn</h1>
+          <h2>
+            Fullstack Web Developer
+          </h2>
+          <hr />
+          <h2>
+            Creative Problem-Solver
+          </h2>
+          <div class="wrap__contacts" id="wrap__contacts">
+            <button id="email" class="btn__contact">
+              <img
+                class="img__contact"
+                src="assets/icons/mail.svg"
+                alt="Email"
+                height="30px"
+                width="30px"
+              />
+              <p>Email</p>
+            </button>
+            <button id="github" class="btn__contact">
+              <img
+                class="img__contact"
+                src="assets/icons/github.svg"
+                alt="GitHub"
+                height="30px"
+                width="30px"
+              />
+              <p>GitHub</p>
+            </button>
+            <button id="linkedin" class="btn__contact">
+              <img
+                class="img__contact"
+                src="assets/icons/linkedin.svg"
+                alt="LinkedIn"
+                height="30px"
+                width="30px"
+              />
+              <p>LinkedIn</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about area hidden" name="about" id="about">
+        <img class="headshot" src="assets/pictures/headshot.jpg" alt="" />
+        <div class="bio">
+          <p>
+            I'm new to tech, but I've been tinkering with computers my whole
+            life. I try to bring open-mindedness, attention to detail, and a joy
+            of learning into my work.
+          </p>
+          <p>
+            When I'm not coding, I'm a classical singer, a pretty good cook, a
+            proud dog dad, and a lifelong Packers fan.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects area hidden" name="projects" id="projects">
+        <div id="navigate-projects">
+          <button id="previous" tabindex="0"></button>
+          <button id="next" tabindex="0"></button>
+        </div>
+        <div id="view-projects">
+          <section class="project current" id="project1">
+            <h1>Skew My News!</h1>
+            <p class="project-description">
+              Search top US headlines for news across the political spectrum.
+            </p>
+            <p class="project-description">
+              Uses <a href="https://newsapi.org/">News API</a> and
+              <a href="https://www.allsides.com/media-bias/media-bias-ratings"
+                >AllSides Media Bias Ratings</a
+              >
+            </p>
+            <div class="screenshots">
+              <video autoplay loop muted playsinline>
+                <source src="assets/skew/demo.webm" type="video/webm" />
+                <source src="assets/skew/demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project__links">
+              <a href="https://ryandthorn.github.io/skew-my-news/">Live app</a>
+              <a href="https://github.com/ryandthorn/skew-my-news">GitHub</a>
+            </div>
+            <div class="tech-wrap">
+              <h2>Tech used:</h2>
+              <div class="tech-used">
+                <img
+                  src="assets/icons/html5.svg"
+                  alt="HTML5"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/css3.svg"
+                  alt="CSS3"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/js.svg"
+                  alt="JavaScript"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/jquery.svg"
+                  alt="jQuery"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="project hidden" id="project2">
+            <h1>TrebleBase</h1>
+            <p class="project-description">
+              TrebleBase is an idea for an app for classical musicians to easily
+              connect with performance organizations.
+            </p>
+            <div class="screenshots">
+              <video autoplay loop muted playsinline>
+                <source src="assets/treblebase/demo.webm" type="video/webm" />
+                <source src="assets/treblebase/demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project__links">
+              <a href="https://treblebase-client.herokuapp.com/">Live app</a>
+              <a href="https://github.com/ryandthorn/treblebase-client"
+                >GitHub</a
+              >
+            </div>
+            <p class="heroku_note">
+              Note: this live app is hosted on
+              <a href="https://www.heroku.com/">Heroku</a> and may need to be
+              woken up. It might take a few seconds to load.
+            </p>
+            <div class="tech-wrap">
+              <h2>Tech used:</h2>
+              <div class="tech-used">
+                <img
+                  src="assets/icons/react.svg"
+                  alt="React"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/redux.svg"
+                  alt="React Redux"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/nodejs.svg"
+                  alt="NodeJS"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/express.svg"
+                  alt="Express"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/mongodb.svg"
+                  alt="MongoDB"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/html5.svg"
+                  alt="HTML5"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/css3.svg"
+                  alt="CSS3"
+                  height="50px"
+                  width="50px"
+                />
+                <img
+                  src="assets/icons/js.svg"
+                  alt="JavaScript"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+            </div>
+          </section>
+          <section class="project hidden" id="project3">
+            <h1>Dendrion</h1>
+            <p class="project-description">
+              My first leap into making a game, inspired by the old-school
+              browser RPGs I grew up playing.
+            </p>
+            <div class="screenshots">
+              <video autoplay loop muted playsinline>
+                <source src="assets/rpg/demo.webm" type="video/webm" />
+                <source src="assets/rpg/demo.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project__links">
+              <a href="https://obscure-citadel-64452.herokuapp.com/"
+                >Live app</a
+              >
+              <a href="https://github.com/ryandthorn/text-rpg">GitHub</a>
+            </div>
+            <p class="heroku_note">
+              Note: this live app is hosted on
+              <a href="https://www.heroku.com/">Heroku</a> and may need to be
+              woken up. It might take a few seconds to load.
+            </p>
+            <div class="tech-used">
+              <img
+                src="assets/icons/nodejs.svg"
+                alt="NodeJS"
+                height="50px"
+                width="50px"
+              />
+              <img
+                src="assets/icons/express.svg"
+                alt="Express"
+                height="50px"
+                width="50px"
+              />
+              <img
+                src="assets/icons/mongodb.svg"
+                alt="MongoDB"
+                height="50px"
+                width="50px"
+              />
+              <img
+                src="assets/icons/html5.svg"
+                alt="HTML5"
+                height="50px"
+                width="50px"
+              />
+              <img
+                src="assets/icons/css3.svg"
+                alt="CSS3"
+                height="50px"
+                width="50px"
+              />
+              <img
+                src="assets/icons/js.svg"
+                alt="JavaScript"
+                height="50px"
+                width="50px"
+              />
+              <img
+                src="assets/icons/jquery.svg"
+                alt="jQuery"
+                height="50px"
+                width="50px"
+              />
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="_script.js"></script>
+  </body>
+</html>
